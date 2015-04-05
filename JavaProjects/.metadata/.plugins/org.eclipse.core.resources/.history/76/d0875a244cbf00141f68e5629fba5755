@@ -1,0 +1,18 @@
+import java.util.HashMap;
+
+
+public class Dictionary {
+    private HashMap<String, String> dictionary;
+
+    public Dictionary() {
+        this.dictionary = new HashMap<String, String>();
+    }
+
+    public void addWord(String name, String number) {
+        this.dictionary.put(name, number);
+    }
+
+    public String lastTwitch(String name) {
+        this.dictionary.get(name);
+    }
+}

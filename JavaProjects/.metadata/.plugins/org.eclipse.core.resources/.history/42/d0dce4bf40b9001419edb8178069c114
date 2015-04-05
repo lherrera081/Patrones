@@ -1,0 +1,165 @@
+import java.util.Random;
+import java.util.Scanner;
+
+import javax.print.attribute.standard.NumberUpSupported;
+
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		while(true){
+			System.out.flush();
+			System.out.println("Digite el numero de ejericio que desea ver: ");
+			String exerciseNumber = in.nextLine();
+			switch(exerciseNumber){
+				case "3":
+					Exercise3();
+					break;
+				case "5":
+					Exercise5();
+					break;
+				case "16":
+					Exercise16(in);
+					break;
+				case "20":
+					Excersise20(in);
+					break;
+				case "34":
+					Exercise34(in);
+					break;
+				case "41":
+					Exercise41(in);
+					break;
+				case "44":
+					Exercise44();
+					break;
+				case "52":
+					Excersise52(in);
+					break;
+				case "57":
+					Exercise3();
+					break;
+				case "69":
+					Exercise3();
+					break;
+				case "70":
+					Exercise3();
+					break;
+				case "76":
+					Exercise3();
+					break;
+				case "94":
+					Exercise3();
+					break;
+				case "95":
+					Exercise3();
+					break;
+				case "114":
+					Exercise3();
+					break;
+				case "136":
+					Exercise3();
+					break;
+				default:
+					System.out.println("No se encontró la opción seleccionada");;
+			}
+			in.nextLine();
+		}
+
+	}
+
+	private static void Exercise3() {
+		System.out.println("     *");
+		System.out.println("    ***");
+		System.out.println("   *****");
+		System.out.println("  ********");
+		System.out.println(" **********");
+		System.out.println("     *");
+		System.out.println("Exercise 3: Supruce");
+	}
+	
+	private static void Exercise5() {
+		int days=365;
+		int hours=24;
+		int minutes=60;
+		int seconds=60;
+		int secondsByYear=days*hours*minutes*seconds;
+		System.out.println("One year is "+ secondsByYear +" seconds.");
+		System.out.println("Exercise 5: Seconds in a year");
+	}
+
+	private static void Exercise16(Scanner in) {
+		System.out.println("EVEN, ODD - Type a number: ");
+		int number= Integer.parseInt(in.nextLine());
+		if((number % 2) == 0)
+		{
+			System.out.println("Number "+number+" is even.");
+		}else
+		{
+			System.out.println("Number "+number+" is odd");
+		}
+	}
+	
+	private static void Excersise20(Scanner in){
+		System.out.print("Type your username: ");
+		String userName = in.nextLine();
+		System.out.print("Type your password: ");
+		String password = in.nextLine();
+		if((userName.equals("alex") && password.equals("mightyducks"))
+			||(userName.equals("emily") && password.equals("cat")	)){
+			System.out.print("You are now logged into the system!");
+		}else{
+			System.out.print("Your username or password was invalid!");
+		}
+	}
+	
+	private static void Exercise34(Scanner in) {
+		System.out.println("FACTORIAL - Type a number: ");
+		int number= Integer.parseInt(in.nextLine());
+		long result = 1;
+		for(int i=number;i>1;i--){ 
+			result=result*i; 
+		} 
+		System.out.println("Factorial is "+result);
+	}
+	
+
+	private static void Exercise41(Scanner in) {
+		Random random = new Random();
+		int correctNumber = random.nextInt(100 + 1);
+		int i=0;
+		while(true){
+			i++;
+			System.out.print("Guess a number: ");
+			int number= Integer.parseInt(in.nextLine());
+			if(correctNumber== number)
+				break;
+			else if(number<correctNumber)
+				System.out.println("The number is greater, guesses made: "+i);
+			else
+				System.out.println("The number is lesser, guesses made: "+i);
+		}
+		System.out.println("Congratulations, your guess is correct!");
+	}
+	
+	public static void Exercise44() {
+		int answer =  least(2, 7);
+	    System.out.println("Least: " + answer);	
+	}
+	
+	public static int least(int number1, int number2) {
+		return number1<number2? number1:number2;
+	}
+
+	private static void Excersise52(Scanner in){
+		System.out.print("Type your name: ");
+		String name = in.nextLine();
+		System.out.print("In reverse order: ");
+		for(int i=name.length(); i>0;i--){
+			System.out.print(name.charAt(i-1));	
+		}
+	}
+	
+	
+}

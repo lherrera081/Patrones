@@ -1,0 +1,10 @@
+package people;
+
+public class Student extends people.Person{
+
+	public Student(String name, String number) {
+		super(name, number);
+	}
+	
+	
+}

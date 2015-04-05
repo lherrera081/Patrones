@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+
+public class TextUserInterface {
+	private Scanner reader;
+	private Dictionary dictionary;
+	public TextUserInterface(Scanner reader, Dictionary dictionary)
+	{
+		this.reader=reader;
+		this.dictionary=dictionary;
+	}
+	
+	public void start(){
+		System.out.println("Statement:");
+		System.out.println("quit - quit the text user interface");
+		String word;
+		do{
+			System.out.print("Statement: ");
+			word = reader.nextLine();
+			switch(word){
+				case "quit":
+				break;
+				default:
+					System.out.println("Unknown statement");
+					break;
+			}
+		}
+		while(word.equals("quit")==false);
+	}
+	
+}

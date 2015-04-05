@@ -1,0 +1,22 @@
+import java.util.HashMap;
+
+
+public class Dictionary {
+    private HashMap<String, String> wordPairs ;
+
+    public Dictionary() {
+        this.wordPairs  = new HashMap<String, String>();
+    }
+
+    public void add(String word, String translate) {
+        if(this.wordPairs .containsKey(word))
+        	this.wordPairs.replace(word, translate);
+    	this.wordPairs .put(word, translate);
+    }
+
+    public String translate(String word) {
+    	if(this.wordPairs .containsKey(word))
+    		return "Word not found";
+        return this.wordPairs.get(word);
+    }
+}

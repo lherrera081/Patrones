@@ -1,0 +1,37 @@
+import java.util.Scanner;
+
+
+public class MainClass {
+
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		while(true){
+			System.out.flush();
+			System.out.println("Digite el numero de ejericio que desea ver: ");
+			String exerciseNumber = in.nextLine();
+			switch(exerciseNumber){
+				case "3":
+				case "5":
+				case "16":
+				case "20":
+				case "34":
+				case "41":
+				case "44":
+				case "52":
+				case "57":
+				case "69":
+				case "70":
+				case "76":
+				case "94":
+				case "95":
+				case "114":
+				case "136":
+				default:
+					System.out.println("No se encontró la opción seleccionada");;
+			}
+			String exerciseNumber = in.nextLine();
+		}
+
+	}
+
+}

@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+
+public class TextUserInterface {
+
+	public TextUserInterface(Scanner reader, Dictionary dictionary)
+	{
+	
+	}
+	
+	public void start(){
+		System.out.println("Statement:");
+		System.out.println("quit - quit the text user interface");
+	
+	}
+	
+}
