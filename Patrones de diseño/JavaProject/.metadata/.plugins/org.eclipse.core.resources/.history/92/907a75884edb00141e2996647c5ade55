@@ -1,0 +1,23 @@
+package Observer;
+
+public class ConcreteObservable implements IObservable {
+
+	@Override
+	public void registerObserver(IObserver observer) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void unregisterObserver(IObserver observer) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void notifyObservers() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,24 @@
+package Observer;
+
+import java.util.List;
+
+public class ConcreteObservable implements IObservable {
+	
+	private List<IObserver> observerCollection;
+	
+	@Override
+	public void registerObserver(IObserver observer) {
+		
+	}
+
+	@Override
+	public void unregisterObserver(IObserver observer) {
+		
+	}
+
+	@Override
+	public void notifyObservers() {
+		
+	}
+
+}

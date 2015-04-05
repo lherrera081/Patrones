@@ -1,0 +1,37 @@
+package Observer;
+
+import java.util.ArrayList;
+import java.util.List;
+
+
+
+public class ConcreteObservable implements IObservable {
+	
+	private List<IObserver> observerCollection;
+	public ConcreteObservable()
+	{
+		observerCollection = new ArrayList<IObserver>();
+	}
+	@Override
+	public void registerObserver(IObserver observer) {
+		if(observerCollection.contains(observer)==false){
+			observerCollection.add(observer);
+		}
+	}
+
+	@Override
+	public void unregisterObserver(IObserver observer) {
+		if(observerCollection.contains(observer)){
+			observerCollection.remove(observer);
+		}		
+	}
+
+	@Override
+	public void notifyObservers() {
+		System.out.println("Notificando a los observadores");
+		for(IObserver observer : observerCollection){
+			observer.action();
+		}
+	}
+
+}

@@ -1,0 +1,18 @@
+package Singleton;
+
+public class SingletonMain {
+
+	public static void main(String[] args) {
+		Singleton first = Singleton.getInstance();
+		first.printCreatedDate();
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		Singleton second = Singleton.getInstance();
+		second.printCreatedDate();
+	}
+
+}
