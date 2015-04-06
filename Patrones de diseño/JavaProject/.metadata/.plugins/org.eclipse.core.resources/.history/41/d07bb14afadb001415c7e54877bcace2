@@ -1,0 +1,9 @@
+package ChainOfResponsability;
+
+public class ChainOfResponsabilityMain {
+
+	public static void main(String[] args) {
+		
+	}
+
+}

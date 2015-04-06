@@ -1,2 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<typeInfoHistroy/>
+<typeInfoHistroy>
+<typeInfo handle="=Patrones/src&lt;Observer{IObserver.java[IObserver" modifiers="513" timestamp="1428208717900"/>
+<typeInfo handle="=Patrones/C:\/Program Files\/Java\/jre1.8.0_31\/lib\/rt.jar&lt;java.awt.image(ImageObserver.class[ImageObserver" modifiers="1537" timestamp="1424458981630"/>
+<typeInfo handle="=Patrones/src&lt;Observer{IObservable.java[IObservable" modifiers="513" timestamp="1428209012732"/>
+</typeInfoHistroy>

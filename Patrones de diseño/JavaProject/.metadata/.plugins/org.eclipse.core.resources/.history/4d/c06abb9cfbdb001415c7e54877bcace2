@@ -1,0 +1,12 @@
+package ChainOfResponsability;
+
+public class ConcreteHandler3 extends AbstractHandler {
+
+	@Override
+	void handleRequest() {
+		System.out.println("Hola, soy el manejador #3");
+		if(successor!=null)
+			successor.handleRequest();
+	}
+
+}

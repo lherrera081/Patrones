@@ -1,0 +1,11 @@
+package ChainOfResponsability;
+
+public class ConcreteHandler3 extends AbstractHandler {
+
+	@Override
+	void handleRequest() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

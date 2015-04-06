@@ -1,0 +1,16 @@
+package ChainOfResponsability;
+
+public class ChainOfResponsabilityMain {
+
+	public static void main(String[] args) {
+		///Creación de la cadena de responsabilidad
+		AbstractHandler principal = new ConcreteHandler1();
+		AbstractHandler handler2 = new ConcreteHandler2();
+		AbstractHandler handler3 = new ConcreteHandler3();
+		
+		System.out.println("Principal sin sucesor");
+		principal.handleRequest();
+		
+	}
+
+}

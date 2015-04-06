@@ -1,0 +1,6 @@
+package ChainOfResponsability;
+
+public abstract class AbstractHandler {
+	AbstractHandler successor;
+	abstract void handleRequest();
+}
